@@ -7991,6 +7991,10 @@ header {
     line-height: 1.5; }
   .services .media-body .heading {
     font-size: 22px; }
+  .services .media-body .big_heading {
+    font-size: 30px;
+    color: #2f89fc;
+   }
 
 .form-group label {
   color: #fff; }
