@@ -7357,7 +7357,7 @@ body {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    background:url(../images/agua.jpeg)no-repeat center center fixed; 
+    background:url(../images/background.jpg)no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
