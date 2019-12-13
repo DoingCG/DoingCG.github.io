@@ -75,34 +75,55 @@
         	<div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
               <span>Blog</span>
-              <h2>Read our blog</h2>
+              <h2>Big Data Spain 2018</h2>
             </div>
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-md-8">
-              <h2 class="mb-3">#1. We Love WordPress Themes</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
-              <p>
-                <img src="images/image_6.jpg" alt="" class="img-fluid">
+              <h2 class="mb-3"></h2>
+              <p>In November 2018 I was lucky to collaborate with Yunou and RGB Corp in this amazing project for StratioBD. The challenge was to make a competitive videogame for the Big Data Spain wich would be played only with users' emotions. It sounds ambitious, doesn't it? <p>
+                <img src="images/BigDataPoster.jpeg" alt="" class="img-fluid">
               </p>
-              <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
-              <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
-              <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
+              <p>Well, times were tight and we had a great challenge, but the team was really involved in it. My job was to develop the game using the 3D assets and art guides provided by Yunou and RGBCorp. </p>
+              <h2 class="mb-3 mt-5">My approach to Touch Designer</h2>
+              <p>For those who don't know it,Touch Designer is a very powerful software that allows to do impresive interactive realtime audiovisuals.
+                 Yunou and RGB Corp had made a really cool interactive presentation for the event using it, and the game would be part of this presentation. So one of the biggest challenges was to communicate Unity's game with Touch Designer's presentation.
+              </p> 
               <p>
-                <img src="images/image_8.jpg" alt="" class="img-fluid">
+                After researching different protocols with Luciano,who was in charge of Touch Designer's part(check out his art <a href="https://www.instagram.com/tolch.av/">here</a>), we decided to send the game inputs from Touch Designer to the game using OSC and Spout. 
+                So StratioBD's AI would send information about the players and their emotions to Touch Designer and It would send to the game the names using Spout and the emotions and trigger events using OSC.  
+                
+              </p>
+              <p>    
+                <img src="images/BigDataBehind.jpeg" alt="" class="img-fluid">
               </p>
               <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
-              <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
-              <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
-              <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
-              <div class="tag-widget post-tag-container mb-5 mt-5">
+              <h2 class="mb-3 mt-5">Game FX</h2>
+              <p>
+                Another challenge I had was to make the game look cool. There were a lot of assets and I had to implement them using the choosen wireframe style. I tested different solutions including wireframe shaders and materials with wireframe textures, but the final solution was to give thickness to create models compound of two parts: colored wires with thickness and a scaled model to occlude back wires. 
+                For that purpose I created a procedural tool in Houdini which allowed me to save a lot of time. I made also some fracture fx and particle systems and the most important challenge, I have to deal with aliasing.
+              </p>
+              <p>
+                The game would be shown in a big screen with not too much resolution and aliasing was a great problem. I tested a lot of different antialiasing methods but anyone seemed to be enougth. The solution was to render it at double resolution and rescale it to the screen resolution. 
+                It is not the most fastest approach, I know it, but it wasn't a problem and the results were much better.
+              </p>
+
+              <h2 class="mb-3 mt-5">The result</h2>
+              <p>To sum up, it was a hard job, but I'm proud to say that I learned a lot doing it and it was a big succeed. 
+                There were always crowds of people waiting to  enjoy our game.
+              </p>
+              <iframe 
+              src="https://www.youtube.com/embed/oZxgCBFd_TI" 
+              width="640" height="480" webkitallowfullscreen mozallowfullscreen allowfullscreen class="embed-responsive video">
+              </iframe>
+              <!--<div class="tag-widget post-tag-container mb-5 mt-5">
                 <div class="tagcloud">
                   <a href="#" class="tag-cloud-link">Life</a>
                   <a href="#" class="tag-cloud-link">Sport</a>
                   <a href="#" class="tag-cloud-link">Tech</a>
                   <a href="#" class="tag-cloud-link">Travel</a>
                 </div>
-              </div>
+              </div>-->
               
               <div class="about-author d-flex pt-5">
                 <div class="bio align-self-md-center mr-4">
